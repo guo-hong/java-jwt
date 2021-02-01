@@ -64,7 +64,7 @@ public interface Verification {
 
     /**
      * Set a specific leeway window in seconds in which the Issued At ("iat") Claim will still be valid.
-     * Issued At Date is always verified when the value is present. This method overrides the value set with acceptLeeway
+     * This method overrides the value set with acceptLeeway. "iat" is verified by default but can be skipped.
      *
      * @param leeway the window in seconds in which the Issued At Claim will still be valid.
      * @return this same Verification instance.
